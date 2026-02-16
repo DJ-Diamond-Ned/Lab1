@@ -8,7 +8,7 @@
             .block3{
                 padding: 10px;
                 flex: 1;
-                height: 900px;   
+                height: auto;   
             }
             .block1 {
                 background: black;
@@ -16,10 +16,10 @@
                 border-bottom-left-radius: 40px;   
             }
             .block2{
-                background: rgba(253, 218, 37);
+                background: black;
             }
             .block3{
-                background: rgba(239, 51, 64);
+                background: black;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
             }
@@ -29,8 +29,9 @@
                 justify-content: center;
                 align-items: center;
 
-                background: white;
+                background: gray;
                 border-radius: 10px;
+
 
                 width: 300px;
                 height: 150px;
@@ -44,9 +45,17 @@
                 background-color: rgba(255, 194, 80, 0);
                 color: rgba(255, 194, 80, 0);
             }
+            .anecdote_text{
+                opacity: 1;
+            }
+            .block4:hover .anecdote_text{
+                opacity: 0;
+                display: none;
+            }
             .anecdote_image{
                 opacity: 0;
                 width: 100%;
+                height: 100%;
                 object-position: center;
                 object-fit: cover;
                 display: none;
@@ -55,6 +64,13 @@
             .block4:hover .anecdote_image{
                 opacity: 1;
                 display: inline-block;
+            }
+            .block_dark_fantasy{
+                background: black;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
             .block_hajime_no_ippo1,
             .block_hajime_no_ippo2{
@@ -87,12 +103,13 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                width: 60%;
+                width: 70%;
             }
             .blocktext {
                 border: 3px dashed black;
-                background: greenyellow;
+                background: gray;
                 border-radius: 20px;
+                
 
                 margin-left: auto;
                 margin-right: auto;
@@ -105,11 +122,12 @@
                 text-align: center;
                 padding: 0;
                 margin: 23px;
+                color: red;
             }
             .title_style{
-                border: black solid 5px;
+                border: rgb(255, 0, 0) solid 5px;
                 border-radius: 70px;
-                background: rgb(255, 194, 80);
+                background: rgb(44, 44, 44);
                 
                 margin-bottom: 10px ;
                 margin-left: auto;
@@ -138,7 +156,7 @@
         </style>
     </head>
 
-    <body style = "background-color:orange;">
+    <body style = "background-color:rgb(29, 28, 28)">
         <div class = "title_style">
             <p class="title">
                 Анекдоты!
@@ -147,25 +165,18 @@
         <div class = "parentblock">
             <div class = "block1">
                 <div class="block4">
-                    <p>
+                    <p class="anecdote_text">
                         Идет псих по больнице с окpовавленным топоpом. Hавстpечу ему вpач.<br>
                         - Ты что сделал?<br>
                         - Ой смеху-то, Васька пpоснется, а у него голова в тумбочке!
                     </p>
                     <img class = "anecdote_image" src="images/Психопат.png">
                 </div>
-                <img
-                    src = "images/Мем2.jpg"
-                    alt = "мем2"
-                    height="700"
-                    class = "center"
-                    loading="lazy"
-                />
             </div>
 
             <div class = "block2">
                 <div class="block4">
-                    <p>
+                    <p class="anecdote_text">
                     — В салоне есть доктор?<br> 
                     — Да. <br>
                     — Какая у вас специальность? <br>
@@ -175,12 +186,6 @@
                     </p>
                     <img class = "anecdote_image" src="images/Доктор мат. наук.png">
                 </div>
-                <img
-                    src = "images/mem_alt(1).jpg"
-                    alt = "Мем1"
-                    loading="lazy"
-                    class = "center"
-                />
             </div>
 
             <div class = "block3">
@@ -190,15 +195,18 @@
                         она бы в канаве перевернулась.
                     </p>
                 </div>
-                <img
-                    src = "images/mem_alt(2).jpg"
-                    alt = "Мем3"
-                    height="500"
-                    class = "center"
-                    loading="lazy"
-                />
             </div>  
-
+        </div>
+        <div class="block_dark_fantasy">
+            <img 
+            src="images/knight_dak_fantasy.jpg"
+            alt = "knight_dark_fantasy"
+            loading="lazy"
+            class = "center"
+            >
+        <audio src="images/dustum — dark fantasy (www.lightaudio.ru).mp3 " controls>
+            
+        </audio>
         </div>
         <div>
             <p class = "blocktext">
