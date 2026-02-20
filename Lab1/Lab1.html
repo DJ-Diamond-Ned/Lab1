@@ -3,23 +3,26 @@
     <head>
         <title>Anime!!!</title>
         <style>
+            h2{
+                font-size: 60px;
+                text-align: center;
+                padding: 0;
+                margin: 23px;
+                color: red;
+            }
             .block1,
             .block2,
             .block3{
                 padding: 10px;
                 flex: 1;
-                height: auto;   
+                height: auto; 
+                background: black;  
             }
-            .block1 {
-                background: black;
+            .block1{
                 border-top-left-radius: 40px;
                 border-bottom-left-radius: 40px;   
             }
-            .block2{
-                background: black;
-            }
             .block3{
-                background: black;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
             }
@@ -133,29 +136,19 @@
                 
                 box-shadow: 0px 0px 10px rgb(255, 255, 255);
             }
-            .title{
-                font-size: 60px;
-                text-align: center;
-                padding: 0;
-                margin: 23px;
-                color: red;
-            }
             .title_style{
                 border: rgb(255, 0, 0) solid 5px;
                 border-radius: 70px;
                 background: rgb(44, 44, 44);
                 
-                margin-bottom: 10px ;
-                margin-left: auto;
-                margin-right: auto;
+                margin: 0 auto 10px auto;
+
                 width: 400px
             }
             .text_after_title{
-                margin: 0%;
                 margin-bottom: 50px;
             }
             .quotes_up{
-                margin: 0px;
                 margin-left: 20px;
             }
             .quotes_down{
@@ -169,32 +162,43 @@
             li{
                 color: white;
             }
-            tr{
+            caption,
+            table,
+            th,
+            td {
+                align-items: center;
+                text-align: center;
 
+                font-size: large;
+                color: rgb(255, 255, 255);
+                margin: auto;
+
+                border: 3px solid white;
+                border-collapse: collapse;
+                background-color: rgb(63, 63, 63);
+            }
+            th{
+                padding: 20px;
+            }
+            td{
+                padding: 5px;
             }
             table{
-                object-position: center;
-
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 5px;
-
-                color: white;
-                width: 700px;
-
-                border: 10px solid white;
+                border-collapse: collapse;
+            }
+            caption{
+                font-size:x-large;
             }
         </style>
     </head>
 
     <body style = "background-color:rgb(29, 28, 28)">
         <div class = "title_style">
-            <p class="title">
+            <h2>
                 Анекдоты!
-            </p>
+            </h2>
         </div>
-        <div class = "parentblock">
+        <section class = "parentblock">
             <div class = "block1">
                 <div class="block4">
                     <p class="anecdote_text">
@@ -228,8 +232,8 @@
                     </p>
                 </div>
             </div>  
-        </div>
-        <div class="block_dark_fantasy">
+        </section>
+        <section class="block_dark_fantasy">
             <img 
             src="images/knight_dak_fantasy.jpg"
             alt = "knight_dark_fantasy"
@@ -240,63 +244,69 @@
             <source src="images/dustum — dark fantasy (www.lightaudio.ru).mp3 " type="audio/mpeg">
             
         </audio>
-        </div>
+        </section>
         <div>
             <p class = "blocktext">
                 Ниже представлено описание, отзыв и цитаты последнего просмотренного контента
             </p>
         </div>
-        <div class = "parentblock">
+        <section class = "parentblock">
             <div class = "block_hajime_no_ippo1">
-                <p class = "title" >
-                    <span style="color: red;">
-                        <b>Hajime no ippo(Первый шаг)</b>
-                    </span>
-                </p>
-                <p class="text_after_title">
-                    Над Иппо Макуночи издевались всю его жизнь: постоянно на побегушках,
-                    избиваемый одноклассниками, он мечтает измениться,но ему не хватает
-                    решимости. Однажды, в разгар очередного издевательства Иппо спасает
-                    боксер Такамура Мамору, и приносит,потерявшего от побоев сознание,
-                    Иппо в спортивный зал. Очнувшись, Иппо поражен обстановкой в тренажерном
-                    зале, но не решается ступить и шагу.Такамура вешает фото его одноклассника
-                    на боксерскую грушу и заставляет Иппо ударить её. В конце концов Иппо решается
-                    и просит Такамуру научить его боксу,но Такамура, не веря в его способности,
-                    поручает Иппо за неделю сделать невыполнимую задачу, с этого момента начинается
-                    его путь Боксера.
-                </p>
-                <p class = "title">
-                    Отзыв
-                </p>
-                <p class="text_after_title">
-                    В данный момент я еще не досмотрел данное произведение до конца, однако уже, могу написать отзыв. Это аниме однозначно стоит посмотреть. Даже если не фанат спорта.
-                    Это история про обычного парня, который нашёл себя в боксе. Без магии, без сверхспособностей, или еще какой мистики — просто труд, терпение и желание стать сильнее. Это аниме не про драки, а про характер: как падать, вставать и снова идти вперёд.
-                    Здесь живые персонажи, за которых реально переживаешь. Смешные моменты, которые разбавляют серьёзные бои, а мотивация после просмотра зашкаливает так, что хочется заняться чем угодно, лишь бы не сидеть без дела.
-                    Да, рисовка старая, серий много. Но это тот случай, когда быстро втягиваешься и уже не можешь оторваться.
-                </p>
-                <p class = "title">
-                    Цитаты:
-                </p>
-                <div class = "text_after_title">
-                    <li class="quotes_up">
-                        «Тяжелая работа. Потому что нет ничего более яркого пути, чем тяжелая работа»
-                    </li>
-                    <p class="quotes_down">
-                        ©Камигава Гэндзи
+                <section>
+                    <h2>
+                        <span style="color: red;">
+                            <b>Hajime no ippo(Первый шаг)</b>
+                        </span>
+                    </h2>
+                    <p class="text_after_title">
+                        Над Иппо Макуночи издевались всю его жизнь: постоянно на побегушках,
+                        избиваемый одноклассниками, он мечтает измениться,но ему не хватает
+                        решимости. Однажды, в разгар очередного издевательства Иппо спасает
+                        боксер Такамура Мамору, и приносит,потерявшего от побоев сознание,
+                        Иппо в спортивный зал. Очнувшись, Иппо поражен обстановкой в тренажерном
+                        зале, но не решается ступить и шагу.Такамура вешает фото его одноклассника
+                        на боксерскую грушу и заставляет Иппо ударить её. В конце концов Иппо решается
+                        и просит Такамуру научить его боксу,но Такамура, не веря в его способности,
+                        поручает Иппо за неделю сделать невыполнимую задачу, с этого момента начинается
+                        его путь Боксера.
                     </p>
-                    <li class="quotes_up">
-                        «Слова больно гораздо сильнее. Гораздо сильнее, чем кулаки травмируют тело»
-                    </li>
-                    <p class="quotes_down">
-                        ©Таке Кеичи
+                </section>
+                <section>
+                    <h2>
+                        Отзыв
+                    </h2>
+                    <p class="text_after_title">
+                        В данный момент я еще не досмотрел данное произведение до конца, однако уже, могу написать отзыв. Это аниме однозначно стоит посмотреть. Даже если не фанат спорта.
+                        Это история про обычного парня, который нашёл себя в боксе. Без магии, без сверхспособностей, или еще какой мистики — просто труд, терпение и желание стать сильнее. Это аниме не про драки, а про характер: как падать, вставать и снова идти вперёд.
+                        Здесь живые персонажи, за которых реально переживаешь. Смешные моменты, которые разбавляют серьёзные бои, а мотивация после просмотра зашкаливает так, что хочется заняться чем угодно, лишь бы не сидеть без дела.
+                        Да, рисовка старая, серий много. Но это тот случай, когда быстро втягиваешься и уже не можешь оторваться.
                     </p>
-                    <li class="quotes_up">
-                        «Я ненавижу людей, которые бьют тех, кто слабее. Но еще больше мне противны те, кто не может дать сдачи»
-                    </li>
-                    <p class="quotes_down">
-                        ©Мамору Такамура
-                    </p>
-                </div>
+                </section>
+                <section>
+                    <h2>
+                        Цитаты:
+                    </h2>
+                    <div class = "text_after_title">
+                        <li class="quotes_up">
+                            <q>Тяжелая работа. Потому что нет ничего более яркого пути, чем тяжелая работа</q>
+                        </li>
+                        <p class="quotes_down">
+                            ©Камигава Гэндзи
+                        </p>
+                        <li class="quotes_up">
+                            <q>Слова больно гораздо сильнее. Гораздо сильнее, чем кулаки травмируют тело</q>
+                        </li>
+                        <p class="quotes_down">
+                            ©Таке Кеичи
+                        </p>
+                        <li class="quotes_up">
+                            <q>Я ненавижу людей, которые бьют тех, кто слабее. Но еще больше мне противны те, кто не может дать сдачи</q>
+                        </li>
+                        <p class="quotes_down">
+                            ©Мамору Такамура
+                        </p>
+                    </div>
+                </section>
             </div>
             <div class = "block_hajime_no_ippo2">
                 <img 
@@ -307,9 +317,9 @@
                 class = "center"
                 >
             </div>
-        </div>
+        </section>
         <div>
-            <table>
+            <table border="3">
                 <caption>Зенит РПЛ</caption>
                 <tr>
                     <th>Дата</th>
