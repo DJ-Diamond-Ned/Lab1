@@ -15,7 +15,6 @@
             .block3{
                 padding: 10px;
                 flex: 1;
-                height: auto; 
                 background: black;  
             }
             .block1{
@@ -32,21 +31,19 @@
                 justify-content: center;
                 align-items: center;
 
-                background: gray;
+                background-color: gray;
                 border-radius: 10px;
 
 
                 width: 300px;
-                height: 150px;
+                height: 200px;
 
-                padding: 0;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 20px;                
+                padding: 0px;
+                margin: 0px auto 20px auto;
             }
             .block4:hover{
-                background-color: rgba(255, 194, 80, 0);
-                color: rgba(255, 194, 80, 0);
+                background-color: transparent;
+                color: transparent;
             }
             .anecdote_text{
                 opacity: 1;
@@ -78,24 +75,17 @@
             .block_hajime_no_ippo1,
             .block_hajime_no_ippo2{
                 flex: 1;
-            }
-            .block_hajime_no_ippo1{
-                text-align: left;
-                
                 background: black;
-                color: white;
-
-                padding: 15px;
                 width: 1;
                 height: 1;
-
+            }
+            .block_hajime_no_ippo1{
+                color: white;
+                padding: 15px;
                 font-size: x-large;
                 
             }
             .block_hajime_no_ippo2{
-                background: black;
-                width: 1;
-                height: 1;
                 display: flex;
                 align-items: center;
             }
@@ -113,40 +103,32 @@
                 background: gray;
                 border-radius: 20px;
                 
-
                 margin-left: auto;
                 margin-right: auto;
 
                 padding: 10px;
-                width: 37em
+
             }
             .music_player{
                 object-position: center;
-
                 display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 5px;
-
+                margin: 5px auto 0px auto;
                 width: 20%;
 
-                border: 7px solid;
+                border: 7px solid #4e4a4a;
                 border-radius: 40px;
-                border-color: #4e4a4a;
                 
                 box-shadow: 0px 0px 10px rgb(255, 255, 255);
             }
             .title_style{
-                border: rgb(255, 0, 0) solid 5px;
+                border: 5px solid rgb(255, 0, 0);
                 border-radius: 70px;
                 background: rgb(44, 44, 44);
                 
-                margin: 0 auto 10px auto;
+                margin: 0px auto 10px auto;
+                padding: 20px;
 
-                width: 400px
-            }
-            .text_after_title{
-                margin-bottom: 50px;
+                width: 400px;
             }
             .quotes_up{
                 margin-left: 20px;
@@ -154,10 +136,8 @@
             .quotes_down{
                 font-size: 20px;
                 font-weight: bold;
-
-                margin: 0px;
-                margin-bottom: 20px;
-                margin-left: 40px;
+  
+                margin: 0px 0px 20px 40px;
             }
             li{
                 color: white;
@@ -183,9 +163,6 @@
             td{
                 padding: 5px;
             }
-            table{
-                border-collapse: collapse;
-            }
             caption{
                 font-size:x-large;
             }
@@ -193,11 +170,9 @@
     </head>
 
     <body style = "background-color:rgb(29, 28, 28)">
-        <div class = "title_style">
-            <h2>
-                Анекдоты!
-            </h2>
-        </div>
+        <h2 class="title_style">
+            Анекдоты!
+        </h2>
         <section class = "parentblock">
             <div class = "block1">
                 <div class="block4">
@@ -206,7 +181,7 @@
                         - Ты что сделал?<br>
                         - Ой смеху-то, Васька пpоснется, а у него голова в тумбочке!
                     </p>
-                    <img class = "anecdote_image" src="images/Психопат.png">
+                    <img class = "anecdote_image" src="images/Анекдот про психопата.png">
                 </div>
             </div>
 
@@ -220,7 +195,7 @@
                     — Как жаль, у нас тут один пассажир умирает!..<br>
                     — Минус один.
                     </p>
-                    <img class="anecdote_image" src="images/Доктор мат. наук.png">
+                    <img class="anecdote_image" src="images/Анекдот про доктора.png">
                 </div>
             </div>
 
@@ -230,6 +205,7 @@
                         Если бы моя бабушка знала как хорошо мне удалось сэкономить на ее похоронах...<br>
                         она бы в канаве перевернулась.
                     </p>
+                    <img class="anecdote_image" src="images/Анекдот про бабку.png">
                 </div>
             </div>  
         </section>
@@ -241,8 +217,7 @@
             class = "center"
             >
         <audio controls class = "music_player">
-            <source src="images/dustum — dark fantasy (www.lightaudio.ru).mp3 " type="audio/mpeg">
-            
+            <source src="music/dustum — dark fantasy (www.lightaudio.ru).mp3 " type="audio/mpeg">   
         </audio>
         </section>
         <div>
@@ -254,11 +229,9 @@
             <div class = "block_hajime_no_ippo1">
                 <section>
                     <h2>
-                        <span style="color: red;">
-                            <b>Hajime no ippo(Первый шаг)</b>
-                        </span>
+                        Hajime no ippo(Первый шаг)
                     </h2>
-                    <p class="text_after_title">
+                    <p>
                         Над Иппо Макуночи издевались всю его жизнь: постоянно на побегушках,
                         избиваемый одноклассниками, он мечтает измениться,но ему не хватает
                         решимости. Однажды, в разгар очередного издевательства Иппо спасает
@@ -275,7 +248,7 @@
                     <h2>
                         Отзыв
                     </h2>
-                    <p class="text_after_title">
+                    <p>
                         В данный момент я еще не досмотрел данное произведение до конца, однако уже, могу написать отзыв. Это аниме однозначно стоит посмотреть. Даже если не фанат спорта.
                         Это история про обычного парня, который нашёл себя в боксе. Без магии, без сверхспособностей, или еще какой мистики — просто труд, терпение и желание стать сильнее. Это аниме не про драки, а про характер: как падать, вставать и снова идти вперёд.
                         Здесь живые персонажи, за которых реально переживаешь. Смешные моменты, которые разбавляют серьёзные бои, а мотивация после просмотра зашкаливает так, что хочется заняться чем угодно, лишь бы не сидеть без дела.
@@ -286,26 +259,27 @@
                     <h2>
                         Цитаты:
                     </h2>
-                    <div class = "text_after_title">
-                        <li class="quotes_up">
-                            <q>Тяжелая работа. Потому что нет ничего более яркого пути, чем тяжелая работа</q>
-                        </li>
-                        <p class="quotes_down">
-                            ©Камигава Гэндзи
-                        </p>
-                        <li class="quotes_up">
-                            <q>Слова больно гораздо сильнее. Гораздо сильнее, чем кулаки травмируют тело</q>
-                        </li>
-                        <p class="quotes_down">
-                            ©Таке Кеичи
-                        </p>
-                        <li class="quotes_up">
-                            <q>Я ненавижу людей, которые бьют тех, кто слабее. Но еще больше мне противны те, кто не может дать сдачи</q>
-                        </li>
-                        <p class="quotes_down">
-                            ©Мамору Такамура
-                        </p>
-                    </div>
+                        <ul>
+                            <li class="quotes_up">
+                                <q>Тяжелая работа. Потому что нет ничего более яркого пути, чем тяжелая работа</q>
+                            </li>
+                            <p class="quotes_down">
+                                ©Камигава Гэндзи
+                            </p>
+                            <li class="quotes_up">
+                                <q>Слова больно гораздо сильнее. Гораздо сильнее, чем кулаки травмируют тело</q>
+                            </li>
+                            <p class="quotes_down">
+                                ©Таке Кеичи
+                            </p>
+                            <li class="quotes_up">
+                                <q>Я ненавижу людей, которые бьют тех, кто слабее. Но еще больше мне противны те, кто не может дать сдачи</q>
+                            </li>
+                            <p class="quotes_down">
+                                ©Мамору Такамура
+                            </p>
+                        </ul>
+ 
                 </section>
             </div>
             <div class = "block_hajime_no_ippo2">
