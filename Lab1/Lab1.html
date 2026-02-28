@@ -2,6 +2,7 @@
 <html lang="my">
 
     <head>
+        <meta charset="UTF-8">
         <title>Anime!!!</title>
         <style>
             h2{
@@ -128,6 +129,8 @@
                 padding: 20px;
 
                 width: 400px;
+                text-align: center;
+                color: red;
             }
             .quotes_up{
                 margin-left: 20px;
@@ -169,10 +172,13 @@
     </head>
 
     <body style = "background-color:rgb(29, 28, 28)">
+        <h1 class = "title_style">
+            Лабораторная работа 1
+        </h1>
         <h2 class="title_style">
             Анекдоты!
         </h2>
-        <div class = "parentblock">
+        <section class = "parentblock">
             <div class = "block1">
                 <div class="block4">
                     <p class="anecdote_text">
@@ -207,8 +213,8 @@
                     <img class="anecdote_image" src="images/Анекдот_про_бабку.png">
                 </div>
             </div>  
-        </div>
-        <div class="block_dark_fantasy">
+        </section>
+        <section class="block_dark_fantasy">
             <img 
             src="images/knight_dak_fantasy.jpg"
             alt = "knight_dark_fantasy"
@@ -218,15 +224,15 @@
         <audio controls class = "music_player">
             <source src="music/dustum—dark_fantasy(www.lightaudio.ru).mp3" type="audio/mpeg">   
         </audio>
-    </div>
+        </section>
         <div>
             <p class = "blocktext">
                 Ниже представлено описание, отзыв и цитаты последнего просмотренного контента
             </p>
         </div>
-        <div class = "parentblock">
+        <section class = "parentblock">
             <div class = "block_hajime_no_ippo1">
-                <section>
+                <div>
                     <h2>
                         Hajime no ippo(Первый шаг)
                     </h2>
@@ -242,8 +248,8 @@
                         поручает Иппо за неделю сделать невыполнимую задачу, с этого момента начинается
                         его путь Боксера.
                     </p>
-                </section>
-                <section>
+                </div>
+                <div>
                     <h2>
                         Отзыв
                     </h2>
@@ -253,8 +259,8 @@
                         Здесь живые персонажи, за которых реально переживаешь. Смешные моменты, которые разбавляют серьёзные бои, а мотивация после просмотра зашкаливает так, что хочется заняться чем угодно, лишь бы не сидеть без дела.
                         Да, рисовка старая, серий много. Но это тот случай, когда быстро втягиваешься и уже не можешь оторваться.
                     </p>
-                </section>
-                <section>
+                </div>
+                <div>
                     <h2>
                         Цитаты:
                     </h2>
@@ -279,13 +285,13 @@
                             </dd>
                         </dl>
  
-                </section>
+                    </div>
             </div>
             <div class = "block_hajime_no_ippo2">
                 <img src = "images/ippo_image.jpg" alt = "Hajime_no_ippo_paint" height="1000" loading="lazy" class = "center">
             </div>
-        </div>
-        <div>
+        </section>
+        <section>
             <table border="3">
                 <caption>Зенит РПЛ</caption>
                 <tr>
@@ -324,6 +330,6 @@
                     <td>-</td>
                 </tr>
             </table>
-        </div>
+        </section>
     </body>
 </html>
